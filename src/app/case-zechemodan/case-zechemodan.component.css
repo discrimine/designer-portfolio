@@ -6,6 +6,7 @@
     font-family: ProximaNovaBold;
     src: url('../../assets/fonts/ProximaNovaBold.otf');
 }
+@import url('https://fonts.googleapis.com/css?family=Rubik:700');
 *{
 	margin: 0;
 	padding: 0;
@@ -15,12 +16,12 @@ img{
     max-width: 100%;
 }
 .global_tarantinos{
-    background-color: #F1E932;
+    background-color: #4eeaa5;
 }
 header{
 	height: 100vh;
 	width: 100%;
-	background-image: url(/assets/img/trnt/Main.png);
+	background-image: url(/assets/img/zchm/main.png);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -45,10 +46,11 @@ header{
 
 }
 .header_title{
-	font-family: TimesNewRoman;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
 }
 .header_title, .header_desc{
-	color: #FAFF00;
+	color: #38976d;
 	font-size: 96px;
 	text-align: center;
 	z-index: 2;
@@ -73,7 +75,7 @@ section{
 	font-family: ProximaNovaBold;
 }
 .about_left_block{
-    margin-right: 125px;
+    margin-right: 115px;
     max-width: 475px;
 }
 .about_right_block{
@@ -91,58 +93,46 @@ section.card, section.card2, section.menu, section.action{
 }
 .card_img{
 	max-width: 1100px;
-	height: 560px;
+	height: 720px;
 }
 .card_img img{
 	max-width: 100%;
 }
-.card2_left, .card2_right{
-	width: 540px;
-	height: 340px;
+.card2_cards .card_img{
+    height: 600px;
 }
-.card2_left img, .card2_right img{
-	max-width: 100%;
-}
-.card2_cards{
-	display: flex;
-}
-.card2_right{
-	margin-top: 115px;
-}
-.menu_img{
-	width: 920px;
-    height: 570px;
-    margin: 0 auto;
-}
-.menu_img img{
-	max-width: 100%;
-}
-section.posters{
-    flex-direction: column;
-    max-width: 100vw;
-}
-.posters_img{
-    background-image: url(/assets/img/trnt/poster.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 576px;
-    width: 100%;
-}
-.season-posters{
+.web-site{
     display: flex;
+    flex-direction: row;
 }
-.season-poster1, .season-poster2{
-    height: 780px;
-    width: 540px;
+.web-site_left-block{
+    width: 60%;
 }
-.season-poster1{
-    margin-top: 90px;
+.web-site_right_block{
+    width: 40%;
+    font-size: 20px;
+}
+.web-laptom_img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .action_img{
     height: 530px;
     width: 735px;
     margin: 0 auto;
+}
+.posters_block__left{
+    width: 45%;
+}
+.posters_block__right{
+    width: 55%;
+}
+section.posters{
+    padding-bottom: 0;
+}
+.posters_block__right img{
+    height: 100%;
 }
 @media (max-width: 1023px){
     .header_title, .header_desc{
@@ -193,5 +183,23 @@ section.posters{
     }
     .header_img img{
         max-width: 85%;
+    }
+    .card2_cards .card_img{
+        height: auto;
+    }
+    .web-site{
+        flex-direction: column;
+    }
+    .web-site_left-block, .web-site_right_block{
+        width: auto;
+    }
+    section.posters{
+        flex-direction: column;
+    }
+    .posters_block__left, .posters_block__right{
+        width: 100%;
+    }
+    .posters_block__right img{
+        height: auto;
     }
 }

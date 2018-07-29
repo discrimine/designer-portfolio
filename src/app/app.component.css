@@ -1,0 +1,11 @@
+@font-face {
+    font-family: ProximaNova;
+    src: url('../assets/fonts/ProximaNovaSemibold.otf');
+}
+@font-face {
+    font-family: ProximaNovaBold;
+    src: url('../assets/fonts/ProximaNovaBold.otf');
+}
+img{
+    max-width: 100%;
+}
