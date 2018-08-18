@@ -144,6 +144,13 @@ section.posters{
     width: 735px;
     margin: 0 auto;
 }
+.cardsClients{
+    display: flex;
+    flex-direction: column;
+}
+.posters_img-mobile{
+    display: none;
+}
 @media (max-width: 1023px){
     .header_title, .header_desc{
         font-size: 42px;
@@ -175,9 +182,6 @@ section.posters{
     .about_left_block, .about_right_block{
         margin: 0;
     }
-    .card2_cards{
-        flex-direction: column;
-    }
     .card2_right{
         margin-top: 0;
     }
@@ -193,5 +197,16 @@ section.posters{
     }
     .header_img img{
         max-width: 85%;
+    }
+    .posters_img-mobile{
+        display: flex;
+        flex-direction: column;
+    }
+    .poster_img{
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    .posters_img{
+        display: none;
     }
 }

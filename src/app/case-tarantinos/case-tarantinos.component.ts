@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ElementRef } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-case-tarantinos',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CaseTarantinosComponent implements OnInit {
 
-  constructor() { }
+  constructor(private title: Title) { }
 
   ngOnInit() {
+    this.title.setTitle('Case Tarantino`s');
   }
 
 }

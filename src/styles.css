@@ -7,6 +7,9 @@
     font-family: ProximaNovaBold;
     src: url('assets/fonts/ProximaNovaBold.otf');
 }
+body, html{
+    overflow-x: hidden;
+}
 body{
     background-image: url('/assets/bg.png');
     background-size: cover;
@@ -27,7 +30,7 @@ body{
 .content{
     max-width: 1140px;
     margin: 0 auto;
-}   
+}
 .cases_title{
     color: white;
     font-size: 48px;
@@ -35,8 +38,13 @@ body{
     margin: 35px 0px 15px 0px;
 }
 .cases_blocks{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
 }
 .cases_block{
     height: 160px;
@@ -73,16 +81,26 @@ body{
     margin: 0 auto!important;
 }
 section.season-posters{
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 @media (max-width: 1024px){
     .content{
         max-width: 90vw;
     }
     .cases_blocks{
-        flex-flow: row wrap;
-        justify-content: center;
-        align-items: center;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: row wrap;
+                flex-flow: row wrap;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
     .cases_block:not(:first-child){
         margin: 5px;
@@ -91,4 +109,7 @@ section.season-posters{
         margin: 5px;
         width: 46%;
     }
+}
+@media ( min-width: 700px ) and ( max-width: 1023px ){
+
 }
